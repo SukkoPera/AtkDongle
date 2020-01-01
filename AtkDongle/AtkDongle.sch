@@ -1,0 +1,242 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Amiga Serial/Parallel Port Testing Dongle for Amiga Test Kit"
+Date "2020-01-01"
+Rev "1git"
+Comp "SukkoPera"
+Comment1 "Built as per https://github.com/keirf/Amiga-Stuff/blob/master/testkit/serpar.c"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB25_Male J1
+U 1 1 5E0D0CC4
+P 3960 3520
+F 0 "J1" H 3878 2028 50  0000 C CNN
+F 1 "PARALLEL_SIDE" H 3878 2119 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-25_Male_EdgeMount_P2.77mm" H 3960 3520 50  0001 C CNN
+F 3 " ~" H 3960 3520 50  0001 C CNN
+	1    3960 3520
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4260 2320 4465 2320
+Wire Wire Line
+	4465 2320 4465 4120
+Wire Wire Line
+	4465 4120 4260 4120
+Wire Wire Line
+	4260 2520 4360 2520
+Wire Wire Line
+	4360 2520 4360 2720
+Wire Wire Line
+	4360 2720 4260 2720
+Wire Wire Line
+	4260 2920 4360 2920
+Wire Wire Line
+	4360 2920 4360 3120
+Wire Wire Line
+	4360 3120 4260 3120
+Wire Wire Line
+	4260 3320 4360 3320
+Wire Wire Line
+	4360 3320 4360 3520
+Wire Wire Line
+	4360 3520 4260 3520
+Wire Wire Line
+	4260 3920 4360 3920
+Wire Wire Line
+	4360 3920 4360 4320
+Wire Wire Line
+	4360 4320 4260 4320
+Wire Wire Line
+	4260 3720 4585 3720
+Wire Wire Line
+	4585 3720 4585 4520
+Wire Wire Line
+	4585 4520 4260 4520
+Wire Wire Line
+	4585 4520 4585 4720
+Wire Wire Line
+	4585 4720 4260 4720
+Connection ~ 4585 4520
+$Comp
+L Device:LED D1
+U 1 1 5E0D8714
+P 4740 2420
+F 0 "D1" H 4733 2165 50  0000 C CNN
+F 1 "LED" H 4733 2256 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4740 2420 50  0001 C CNN
+F 3 "~" H 4740 2420 50  0001 C CNN
+	1    4740 2420
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4260 2420 4590 2420
+$Comp
+L Device:R R1
+U 1 1 5E0DAE57
+P 5005 2875
+F 0 "R1" H 5075 2921 50  0000 L CNN
+F 1 "220" H 5075 2830 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4935 2875 50  0001 C CNN
+F 3 "~" H 5005 2875 50  0001 C CNN
+	1    5005 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4890 2420 5005 2420
+Wire Wire Line
+	5005 2420 5005 2725
+Wire Wire Line
+	5005 3025 5005 3220
+Wire Wire Line
+	5005 3220 4260 3220
+NoConn ~ 4260 2620
+NoConn ~ 4260 2820
+NoConn ~ 4260 3420
+NoConn ~ 4260 3620
+NoConn ~ 4260 3020
+NoConn ~ 4260 3820
+NoConn ~ 4260 4020
+NoConn ~ 4260 4220
+NoConn ~ 4260 4420
+NoConn ~ 4260 4620
+$Comp
+L Connector:DB25_Female J2
+U 1 1 5E0DE849
+P 6875 3520
+F 0 "J2" H 6793 5012 50  0000 C CNN
+F 1 "SERIAL_SIDE" H 6793 4921 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-25_Female_EdgeMount_P2.77mm" H 6875 3520 50  0001 C CNN
+F 3 " ~" H 6875 3520 50  0001 C CNN
+	1    6875 3520
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7175 2520 7310 2520
+Wire Wire Line
+	7310 2520 7310 2720
+Wire Wire Line
+	7310 2720 7175 2720
+Wire Wire Line
+	7175 2920 7310 2920
+Wire Wire Line
+	7310 2920 7310 3120
+Wire Wire Line
+	7310 3120 7175 3120
+Wire Wire Line
+	7310 3120 7310 3320
+Wire Wire Line
+	7310 3320 7175 3320
+Connection ~ 7310 3120
+Wire Wire Line
+	7175 3620 7310 3620
+Wire Wire Line
+	7310 3620 7310 3720
+Wire Wire Line
+	7310 3720 7175 3720
+Wire Wire Line
+	7310 3720 7310 4020
+Wire Wire Line
+	7310 4020 7175 4020
+Connection ~ 7310 3720
+$Comp
+L Device:LED D2
+U 1 1 5E0ECE52
+P 7655 3920
+F 0 "D2" H 7648 4136 50  0000 C CNN
+F 1 "LED" H 7648 4045 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 7655 3920 50  0001 C CNN
+F 3 "~" H 7655 3920 50  0001 C CNN
+	1    7655 3920
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7175 3920 7505 3920
+$Comp
+L Device:R R2
+U 1 1 5E0ECE5D
+P 7920 3725
+F 0 "R2" H 7851 3679 50  0000 R CNN
+F 1 "1k" H 7851 3770 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7850 3725 50  0001 C CNN
+F 3 "~" H 7920 3725 50  0001 C CNN
+	1    7920 3725
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7805 3920 7920 3920
+Wire Wire Line
+	7920 3920 7920 3875
+Wire Wire Line
+	7175 3520 7920 3520
+Wire Wire Line
+	7920 3520 7920 3575
+$Comp
+L Device:LED D3
+U 1 1 5E0F7277
+P 7655 4120
+F 0 "D3" H 7648 3958 50  0000 C CNN
+F 1 "LED" H 7648 3867 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 7655 4120 50  0001 C CNN
+F 3 "~" H 7655 4120 50  0001 C CNN
+	1    7655 4120
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7175 4120 7505 4120
+$Comp
+L Device:R R3
+U 1 1 5E0F937E
+P 8110 3725
+F 0 "R3" H 8180 3679 50  0000 L CNN
+F 1 "1k" H 8180 3770 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8040 3725 50  0001 C CNN
+F 3 "~" H 8110 3725 50  0001 C CNN
+	1    8110 3725
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7920 3520 8110 3520
+Wire Wire Line
+	8110 3520 8110 3575
+Connection ~ 7920 3520
+Wire Wire Line
+	8110 3875 8110 4120
+Wire Wire Line
+	8110 4120 7805 4120
+NoConn ~ 7175 2320
+NoConn ~ 7175 2420
+NoConn ~ 7175 2620
+NoConn ~ 7175 2820
+NoConn ~ 7175 3020
+NoConn ~ 7175 3220
+NoConn ~ 7175 3420
+NoConn ~ 7175 3820
+NoConn ~ 7175 4220
+NoConn ~ 7175 4320
+NoConn ~ 7175 4420
+NoConn ~ 7175 4520
+NoConn ~ 7175 4620
+NoConn ~ 7175 4720
+Text Notes 3960 4985 0    50   ~ 0
+MALE
+Text Notes 6840 4985 0    50   ~ 0
+FEMALE
+Text Label 4485 2420 0    50   ~ 0
++5v
+Text Label 7365 3920 0    50   ~ 0
++12v
+Text Label 7365 4120 0    50   ~ 0
+-12v
+Text Label 7365 3520 0    50   ~ 0
+gnd_s
+Text Label 4485 3220 0    50   ~ 0
+gnd_p
+$EndSCHEMATC
