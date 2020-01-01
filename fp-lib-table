@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name AtkDongle)(type KiCad)(uri ${KIPRJMOD}/AtkDongle.pretty)(options "")(descr ""))
+)
