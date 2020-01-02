@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Amiga Serial/Parallel Port Testing Dongle for Amiga Test Kit"
+Title "AtkDongle"
 Date "2020-01-01"
 Rev "1git"
 Comp "SukkoPera"
-Comment1 "Built as per https://github.com/keirf/Amiga-Stuff/blob/master/testkit/serpar.c"
-Comment2 ""
+Comment1 "Amiga Serial/Parallel Port Testing Dongle for SysTest/Amiga Test Kit"
+Comment2 "Built as per https://github.com/keirf/Amiga-Stuff/blob/master/testkit/serpar.c"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -92,7 +92,7 @@ $EndComp
 Wire Wire Line
 	3075 6690 3075 6805
 Wire Wire Line
-	3075 7105 3075 7200
+	3075 7105 3075 7155
 NoConn ~ 4260 2620
 NoConn ~ 4260 2820
 NoConn ~ 4260 3420
@@ -330,7 +330,7 @@ F 3 "" H 4590 3365 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3075 6390 3075 6265
+	3075 6390 3075 6330
 $Comp
 L power:GND #PWR02
 U 1 1 5E14A1CD
@@ -380,7 +380,7 @@ Wire Wire Line
 Wire Wire Line
 	3715 7105 3715 7200
 Wire Wire Line
-	3715 6390 3715 6265
+	3715 6390 3715 6330
 $Comp
 L power:GND #PWR04
 U 1 1 5E14E00E
@@ -408,7 +408,7 @@ Wire Wire Line
 Wire Wire Line
 	4355 7105 4355 7200
 Wire Wire Line
-	4355 6390 4355 6265
+	4355 6390 4355 6330
 $Comp
 L power:GND #PWR06
 U 1 1 5E151689
@@ -568,4 +568,76 @@ F 3 "~" H 10685 6245 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 10685 6445
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5E0D5050
+P 2810 6285
+F 0 "TP1" H 2868 6357 50  0000 L CNN
+F 1 "TP+5V" H 2868 6312 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3010 6285 50  0001 C CNN
+F 3 "~" H 3010 6285 50  0001 C CNN
+	1    2810 6285
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2810 6285 2810 6330
+Wire Wire Line
+	2810 6330 3075 6330
+Connection ~ 3075 6330
+Wire Wire Line
+	3075 6330 3075 6265
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5E0D8525
+P 3450 6285
+F 0 "TP2" H 3508 6357 50  0000 L CNN
+F 1 "TP+12V" H 3508 6312 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3650 6285 50  0001 C CNN
+F 3 "~" H 3650 6285 50  0001 C CNN
+	1    3450 6285
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 6285 3450 6330
+Wire Wire Line
+	3450 6330 3715 6330
+Connection ~ 3715 6330
+Wire Wire Line
+	3715 6330 3715 6265
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5E0DA8EA
+P 4090 6285
+F 0 "TP3" H 4148 6357 50  0000 L CNN
+F 1 "TP-12V" H 4148 6312 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4290 6285 50  0001 C CNN
+F 3 "~" H 4290 6285 50  0001 C CNN
+	1    4090 6285
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4090 6285 4090 6330
+Wire Wire Line
+	4090 6330 4355 6330
+Connection ~ 4355 6330
+Wire Wire Line
+	4355 6330 4355 6265
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5E0DCEEE
+P 2810 7110
+F 0 "TP4" H 2868 7182 50  0000 L CNN
+F 1 "TPGND" H 2868 7137 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3010 7110 50  0001 C CNN
+F 3 "~" H 3010 7110 50  0001 C CNN
+	1    2810 7110
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2810 7110 2810 7155
+Wire Wire Line
+	2810 7155 3075 7155
+Connection ~ 3075 7155
+Wire Wire Line
+	3075 7155 3075 7200
 $EndSCHEMATC
