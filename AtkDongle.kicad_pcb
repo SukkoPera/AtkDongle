@@ -15,6 +15,8 @@
     (date 2020-01-02)
     (rev 1git)
     (company SukkoPera)
+    (comment 1 "Amiga Serial/Parallel Port Testing Dongle for SysTest/Amiga Test Kit")
+    (comment 2 "Licensed under CERN OHL v.1.2")
   )
 
   (layers

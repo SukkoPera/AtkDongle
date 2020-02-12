@@ -10,7 +10,7 @@ Rev "1git"
 Comp "SukkoPera"
 Comment1 "Amiga Serial/Parallel Port Testing Dongle for SysTest/Amiga Test Kit"
 Comment2 "Built as per https://github.com/keirf/Amiga-Stuff/blob/master/testkit/serpar.c"
-Comment3 ""
+Comment3 "Licensed under CERN OHL v.1.2"
 Comment4 ""
 $EndDescr
 $Comp
