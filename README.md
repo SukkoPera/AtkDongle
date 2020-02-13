@@ -6,7 +6,7 @@ AtkDongle is an Open Hardware dongle to test parallel and serial ports on Amiga 
 ### Summary
 While diagnosing faults on Amiga computers, it is necessary to connect a loopback adapter to the serial and parallel ports, which might not be easily available. It might also be necessary to check if the power rails are in order, which involves using multimeter probes directly on the port pins with the risk of creating short-circuits that can damage the machine.
 
-AtkDongle was built to make these operations easier and safer. It was originally designed as per instructions found in keirf's [Amiga Test Kit](https://github.com/keirf/Amiga-Stuff), but later it was found that Chucky's [DiagROM](http://www.diagrom.com) requires the same connections, thus it should be compatible with both of these diagnostic tools (Note that the latter is still untested though).
+AtkDongle was built to make these operations easier and safer. It was originally designed as per instructions found in keirf's [Amiga Test Kit](https://github.com/keirf/Amiga-Stuff) (previously known as *SysTest*), but later it was found that Chucky's [DiagROM](http://www.diagrom.com) requires the same connections, thus it should be compatible with both of these diagnostic tools (Note that the latter is still untested though).
 
 ### Assembly
 Solder all components to the board. Just pay attention to use ports of the right gender on each side:
@@ -35,7 +35,7 @@ If you want to get this board produced, you are recommended to get [the latest r
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
 
 ### License
-The AtkDongle documentation, including the design itself, is copyright &copy; SukkoPera 2019-2020.
+The AtkDongle documentation, including the design itself, is copyright &copy; SukkoPera 2020.
 
 AtkDongle is Open Hardware licensed under the [CERN OHL v. 1.2](http://ohwr.org/cernohl).
 
