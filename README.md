@@ -9,12 +9,12 @@ While diagnosing faults on Amiga computers, it is necessary to connect a loopbac
 AtkDongle was built to make these operations easier and safer. It was originally designed as per instructions found in keirf's [Amiga Test Kit](https://github.com/keirf/Amiga-Stuff) (previously known as *SysTest*), but later it was found that Chucky's [DiagROM](http://www.diagrom.com) requires the same connections, thus it should be compatible with both of these diagnostic tools (Note that the latter is still untested though).
 
 ### Assembly
-Solder all components to the board. Just pay attention to use ports of the right gender on each side:
+Solder all components to the board in the order you prefer. Just pay attention to use ports of the right gender on each side, as both connectors are D-Sub 25 pins (DB-25) but:
 - The **parallel** side needs a **male** connector.
 - The **serial** side needs a **female** connector.
 
-You are also recommended to pay attention when choosing the resistors led, as you might need to tune them according to the colors and type of leds you
-chose. For instance, I used a red, a yellow and a green led and I had to use resistors of respectively 470, 680 and 220 ohm in order to make them look as bright as each other.
+You are also recommended to pay attention with the resistors, as you might need to tune them according to the colors and type of leds you
+are going to use: for instance, I used a red, a yellow and a green led and I had to use resistors of respectively 470, 680 and 220 ohm in order to make them look as bright as each other.
 
 ### Usage
 You can plug the dongle into the serial or parallel port of any Amiga at any time. Someof the leds will light up if the power pins are providing voltage and current. In particular:
