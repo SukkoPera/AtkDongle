@@ -26,7 +26,7 @@ A led lighting up does not imply that the corresponding voltage is actually corr
 
 The dongle also provides loopback connections for both the parallel and serial ports. These are useful for the port tests in Amiga Test Kit, for example: just hit <kbd>F8</kbd> and follow the on-screen instructions.
 
-Finally, you can solder pin headers that will allow easy access to all the voltages present on the ports so that you can use them to power other boards/peripherals. Note that most (if not all) Amiga models limit the current that can be drawn from the ports, so you are recommended to check the Amiga schematics and **NOT to use these if you do not fully understand what you are doing, as you might damage your Amiga and/or power supply. Also NOT connect jumper caps on these pins, they are not meant for that!**.
+Finally, you can solder pin headers that will allow easy access to all the voltages present on the ports so that you can use them to power other boards/peripherals. Note that most (if not all) Amiga models limit the current that can be drawn from the ports, so you are recommended to check the Amiga schematics and **NOT to use these if you do not fully understand what you are doing, as you might damage your Amiga and/or power supply. Also DO NOT connect jumper caps on these pins, they are not meant for that!**.
 
 ### Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/AtkDongle/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
