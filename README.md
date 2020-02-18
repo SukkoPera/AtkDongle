@@ -13,7 +13,7 @@ Solder all components to the board in the order you prefer. Just pay attention t
 - The **parallel** side needs a **male** connector
 - The **serial** side needs a **female** connector
 
-You are also recommended to pay attention to the resistors as you might need to tune them according to the colors and type of leds you are going to use: for instance, I used a red, a yellow and a green led and I had to use resistors of respectively 470, 680 and 220 ohm in order to make them look as bright as each other.
+You are also recommended to pay attention to the resistors as you might need to tune them according to the colors and type of leds you are going to use: for instance, I used a red, a yellow and a green led and I had to use resistors of respectively 470, 680 and 220 ohm in order to make them look as bright as each other. Cathode (shorter leg) goes into the square pad.
 
 ### Usage
 You can plug the dongle into the serial or parallel port of any Amiga at any time. Always use one side at a time: **NEVER connect both ports of the dongle at the same time!**
