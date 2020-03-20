@@ -24,7 +24,7 @@ Some of the leds will light up if the power pins are providing voltage and curre
 
 A led lighting up does not imply that the corresponding voltage is actually correct, so you should grab your multimeter and make sure by measuring on the exposed pads. Just be careful not to trigger any short-circuit (The +12V pad sits pretty close to a leg of R1, you were warned!).
 
-The dongle also provides loopback connections for both the parallel and serial ports. These are useful for the port tests in Amiga Test Kit (hit <kbd>F8</kbd>) or DiagROM (Go to *Porttests*, <kbd>5</kbd>).
+The dongle also provides loopback connections for both the parallel and serial ports. These are useful for the port tests in Amiga Test Kit (Hit <kbd>F8</kbd>) or DiagROM (Go to *Porttests*, <kbd>5</kbd>).
 
 Finally, you can solder pin headers that will allow easy access to all the voltages present on the ports so that you can use them to power other boards/peripherals. Note that most (if not all) Amiga models limit the current that can be drawn from the ports, so you are recommended to check the Amiga schematics and **NOT to use these if you do not fully understand what you are doing, as you might damage your Amiga and/or power supply. Also DO NOT connect jumper caps on these pins, they are not meant for that!**.
 
