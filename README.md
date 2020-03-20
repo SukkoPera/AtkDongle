@@ -6,7 +6,7 @@ AtkDongle is an Open Hardware dongle to test and troubleshoot parallel and seria
 ### Summary
 While diagnosing faults on Amiga computers, it is necessary to connect a loopback adapter to the serial and parallel ports, which might not be easily available. It might also be necessary to check if the power rails are in order, which involves using multimeter probes directly on the port pins with the risk of creating short-circuits that can damage the machine.
 
-AtkDongle was designed to make these operations easier and safer. It was originally made according to the instructions found in keirf's [Amiga Test Kit](https://github.com/keirf/Amiga-Stuff) (previously known as *SysTest*), but later it was found that Chucky's [DiagROM](http://www.diagrom.com) requires the same connections, thus it should be compatible with both of these diagnostic tools (Note that the latter is still untested though).
+AtkDongle was designed to make these operations easier and safer. It was originally made according to the instructions found in keirf's [Amiga Test Kit](https://github.com/keirf/Amiga-Stuff) (previously known as *SysTest*), but later it was found that Chucky's [DiagROM](http://www.diagrom.com) requires the same connections, thus it is compatible with both of these diagnostic tools.
 
 ### Assembly
 Solder all components to the board in the order you prefer. Just pay attention to use ports of the right gender on each side, as both connectors are D-Sub 25 pins (*DB-25*) but:
@@ -24,7 +24,7 @@ Some of the leds will light up if the power pins are providing voltage and curre
 
 A led lighting up does not imply that the corresponding voltage is actually correct, so you should grab your multimeter and make sure by measuring on the exposed pads. Just be careful not to trigger any short-circuit (The +12V pad sits pretty close to a leg of R1, you were warned!).
 
-The dongle also provides loopback connections for both the parallel and serial ports. These are useful for the port tests in Amiga Test Kit, for example: just hit <kbd>F8</kbd> and follow the on-screen instructions.
+The dongle also provides loopback connections for both the parallel and serial ports. These are useful for the port tests in Amiga Test Kit (hit <kbd>F8</kbd>) or DiagROM (Go to *Porttests*, <kbd>5</kbd>).
 
 Finally, you can solder pin headers that will allow easy access to all the voltages present on the ports so that you can use them to power other boards/peripherals. Note that most (if not all) Amiga models limit the current that can be drawn from the ports, so you are recommended to check the Amiga schematics and **NOT to use these if you do not fully understand what you are doing, as you might damage your Amiga and/or power supply. Also DO NOT connect jumper caps on these pins, they are not meant for that!**.
 
